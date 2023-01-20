@@ -10,7 +10,7 @@ categories: front
 
 I'm an undergraduate student at the Insitute for Interdesciplinary Information Sciences, Tsinghua University. I have a wide range of research interests, including machine learning, deep learning and their application to computational biology.
 
-[CV](/assets/CV.pdf)
+[[CV](/assets/CV.pdf)]   [[Google Scholar](https://scholar.google.com/citations?user=vjgnMl0AAAAJ)]
 
 ### Publications
 **Contrastive learning of protein representations with graph neural networks for structural and functional annotations**
