@@ -105,7 +105,7 @@ Restart jupyter notebook, if not see nbextension, then run
 jupyter contrib nbextension install --user --skip-running-check
 ```
 
-To change different virtual env in jupyter notebook, install `nb_cona`:
+To change different virtual env in jupyter notebook, install `nb_conda`:
 ```
 conda install nb_conda
 ```
