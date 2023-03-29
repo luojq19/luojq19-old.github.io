@@ -64,4 +64,48 @@ conda create -n env_name python=3.8
 
 **gpustat, nvtop:** convenient GPU status visualization
 
+#### Install jupyter notebook and nb_extensions
+First install ipython:
+```
+conda install -c anaconda ipython
+```
+Run `ipython` command to check, if not working, deactivate and then activate the current env.
 
+Then install jupyter notebook:
+```
+conda install -c anaconda notebook
+```
+Set up jupyter notebook remote access:
+```
+jupyter notebook --generate-config
+```
+Open `ipython`, and run the following code:
+```
+In [1]: from notebook.auth import passwd
+In [2]: passwd()
+Enter password:
+Verify password:
+Out[2]: 'sha1:cexxxxxxxxxxxxxxxxx'
+```
+Modify the config.py file just generated as follows:
+```
+c.NotebookApp.ip='*'
+c.NotebookApp.password = u'sha1:ce...' # the cipher code above
+c.NotebookApp.open_browser = False
+c.NotebookApp.port =8888 # any port for access
+```
+If forgot the password, just regenerate the config file and regenerate the cipher code.
+
+Install `nbextension`:
+```
+conda install -c conda-forge jupyter_contrib_nbextensions
+```
+Restart jupyter notebook, if not see nbextension, then run
+```
+jupyter contrib nbextension install --user --skip-running-check
+```
+
+To change different virtual env in jupyter notebook, install `nb_cona`:
+```
+conda install nb_conda
+```
