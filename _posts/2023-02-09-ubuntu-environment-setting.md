@@ -109,3 +109,6 @@ To change different virtual env in jupyter notebook, install `nb_conda`:
 ```
 conda install nb_conda
 ```
+
+### gdrive
+refer to https://github.com/prasmussen/gdrive/issues/666 to install gdrive version 2.1.2.
