@@ -111,4 +111,14 @@ conda install nb_conda
 ```
 
 ### gdrive
-refer to https://github.com/prasmussen/gdrive/issues/666 to install gdrive version 2.1.2.
+Refer to this [link](https://github.com/prasmussen/gdrive/issues/666) to install gdrive version 2.1.2.
+
+### Install package without root access
+Refer to this [link](https://askubuntu.com/questions/339/how-can-i-install-a-package-without-root-access)
+
+#### .deb approach
+```
+apt-get download package_name  # replace `package_name` with the name of the package.
+
+dpkg -x package.deb dir
+```
